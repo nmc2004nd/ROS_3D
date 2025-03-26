@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Omni">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.00087394070526145 -1.553490669437E-11 0.0456311332625339"
+        rpy="0 0 0" />
+      <mass
+        value="0.629381616423821" />
+      <inertia
+        ixx="0.00214425027797715"
+        ixy="5.52594737907689E-11"
+        ixz="-1.88262772252783E-05"
+        iyy="0.00227251927301559"
+        iyz="-4.0554460663586E-15"
+        izz="0.00424547239869687" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Omni/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Omni/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_r_f">
+    <inertial>
+      <origin
+        xyz="2.22044604925031E-16 6.93889390390723E-17 0.00799999999999994"
+        rpy="0 0 0" />
+      <mass
+        value="0.0378207576868009" />
+      <inertia
+        ixx="2.85049643711783E-06"
+        ixy="-6.05011130478897E-22"
+        ixz="1.27054942088145E-21"
+        iyy="2.85049643711783E-06"
+        iyz="3.21670751267857E-22"
+        izz="5.19808205118168E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Omni/meshes/link_r_f.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Omni/meshes/link_r_f.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_r_f"
+    type="continuous">
+    <origin
+      xyz="0.10695 -0.10695 0.0145"
+      rpy="-1.5708 0 0.7854" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_r_f" />
+    <axis
+      xyz="0 0 1" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="link_l_f">
+    <inertial>
+      <origin
+        xyz="-5.55111512312578E-17 -1.38777878078145E-16 0.0079999999999999"
+        rpy="0 0 0" />
+      <mass
+        value="0.0378207576868008" />
+      <inertia
+        ixx="2.85049643711785E-06"
+        ixy="1.9828280191704E-22"
+        ixz="1.05879118406788E-22"
+        iyy="2.85049643711784E-06"
+        iyz="-3.0247188040906E-22"
+        izz="5.19808205118168E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Omni/meshes/link_l_f.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Omni/meshes/link_l_f.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_l_f"
+    type="continuous">
+    <origin
+      xyz="0.10695 0.10695 0.0145"
+      rpy="-1.5708 0 2.3562" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_l_f" />
+    <axis
+      xyz="0 0 1" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="link_r_b">
+    <inertial>
+      <origin
+        xyz="-8.32667268468867E-17 4.16333634234434E-17 0.00800000000000006"
+        rpy="0 0 0" />
+      <mass
+        value="0.0378207576868009" />
+      <inertia
+        ixx="2.85049643711785E-06"
+        ixy="3.36876046500654E-21"
+        ixz="9.52912065661088E-22"
+        iyy="2.85049643711785E-06"
+        iyz="-4.64923506358761E-22"
+        izz="5.1980820511817E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Omni/meshes/link_r_b.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Omni/meshes/link_r_b.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_r_b"
+    type="continuous">
+    <origin
+      xyz="-0.10694543648263 -0.10694543648263 0.0145000000000001"
+      rpy="-1.5707963267949 0 -0.785398163397453" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_r_b" />
+    <axis
+      xyz="0 0 1" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="link_l_b">
+    <inertial>
+      <origin
+        xyz="0 -1.80411241501588E-16 0.00800000000000003"
+        rpy="0 0 0" />
+      <mass
+        value="0.0378207576868009" />
+      <inertia
+        ixx="2.85049643711786E-06"
+        ixy="-6.10085181530552E-21"
+        ixz="-9.52912065661088E-22"
+        iyy="2.85049643711785E-06"
+        iyz="-8.26224444492209E-22"
+        izz="5.19808205118169E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Omni/meshes/link_l_b.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Omni/meshes/link_l_b.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_l_b"
+    type="continuous">
+    <origin
+      xyz="-0.10695 0.10695 0.0145"
+      rpy="-1.5708 0 -2.3562" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_l_b" />
+    <axis
+      xyz="0 0 1" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="link_lidar">
+    <inertial>
+      <origin
+        xyz="0.00829409957033961 0 -0.021298857777209"
+        rpy="0 0 0" />
+      <mass
+        value="0.146695752131392" />
+      <inertia
+        ixx="6.22721120792819E-05"
+        ixy="-1.53022570849076E-20"
+        ixz="1.88658076337422E-05"
+        iyy="0.000109673997590948"
+        iyz="1.13544428735481E-20"
+        izz="0.000125682524275729" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Omni/meshes/link_lidar.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Omni/meshes/link_lidar.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_lidar"
+    type="fixed">
+    <origin
+      xyz="-0.0065 0 0.099"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_lidar" />
+    <axis
+      xyz="0 0 0" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="link_cam">
+    <inertial>
+      <origin
+        xyz="-0.011444022515556 -0.00170501551405064 -0.000136099826490349"
+        rpy="0 0 0" />
+      <mass
+        value="0.107910296079292" />
+      <inertia
+        ixx="7.12549049053699E-05"
+        ixy="-1.78365687781969E-08"
+        ixz="4.92930994375656E-08"
+        iyy="7.71001342380399E-06"
+        iyz="2.21028647675028E-10"
+        izz="7.02566214516623E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Omni/meshes/link_cam.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Omni/meshes/link_cam.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_cam"
+    type="fixed">
+    <origin
+      xyz="0.12 0.0017162 0.129"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_cam" />
+    <axis
+      xyz="0 0 0" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="link_gps">
+    <inertial>
+      <origin
+        xyz="-0.000234344503673413 -0.000480179325974467 -0.00809401190680181"
+        rpy="0 0 0" />
+      <mass
+        value="0.0273352261246604" />
+      <inertia
+        ixx="3.55571588602812E-06"
+        ixy="-1.49360731636854E-08"
+        ixz="1.01926750419812E-08"
+        iyy="3.68244658212687E-06"
+        iyz="-5.55452534168042E-10"
+        izz="7.06140819524659E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Omni/meshes/link_gps.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Omni/meshes/link_gps.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_gps"
+    type="fixed">
+    <origin
+      xyz="-0.10128 0.00012301 0.068139"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_gps" />
+    <axis
+      xyz="0 0 0" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="link_base_sung">
+    <inertial>
+      <origin
+        xyz="-5.55111512312578E-17 2.77555756156289E-17 0.00251696154569289"
+        rpy="0 0 0" />
+      <mass
+        value="0.327529187998142" />
+      <inertia
+        ixx="0.00036497029704894"
+        ixy="2.63663820251208E-20"
+        ixz="-1.01257936454411E-19"
+        iyy="0.00036497029704894"
+        iyz="-1.16366910317687E-20"
+        izz="0.0006664691117042" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Omni/meshes/link_base_sung.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Omni/meshes/link_base_sung.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_base_sung"
+    type="fixed">
+    <origin
+      xyz="0 0 0.124"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_base_sung" />
+    <axis
+      xyz="0 0 0" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="link_1">
+    <inertial>
+      <origin
+        xyz="-0.000935849685649387 0.0035887933254565 0.0207980038126824"
+        rpy="0 0 0" />
+      <mass
+        value="0.0984203522483337" />
+      <inertia
+        ixx="6.58482471078486E-05"
+        ixy="1.56489131057454E-06"
+        ixz="-7.35014624325114E-08"
+        iyy="6.02552837375316E-05"
+        iyz="2.81863168662668E-07"
+        izz="5.42301344406042E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Omni/meshes/link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Omni/meshes/link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1"
+    type="continuous">
+    <origin
+      xyz="0 0 0.045"
+      rpy="0 0 0" />
+    <parent
+      link="link_base_sung" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="0 0 1" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="0.0181554974354643 0.0780542515153022 0.0425"
+        rpy="0 0 0" />
+      <mass
+        value="0.539884961621024" />
+      <inertia
+        ixx="0.00190754197212755"
+        ixy="-0.00249134447781831"
+        ixz="3.25260651745651E-19"
+        iyy="0.00468626996426833"
+        iyz="2.48246305905315E-19"
+        izz="0.00620464220748103" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Omni/meshes/link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Omni/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2"
+    type="continuous">
+    <origin
+      xyz="-0.010724 0.041125 0.02"
+      rpy="1.5708 0 0.25509" />
+    <parent
+      link="link_1" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="0 0 1" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+</robot>
